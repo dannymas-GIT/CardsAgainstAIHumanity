@@ -1,0 +1,27 @@
+graph TD
+    A[Project Initialization] --> B[Requirements Analysis]
+    B --> C[Technical Design]
+    C --> D1[Database Schema Design]
+    C --> D2[API Contract Definition]
+    
+    D1 --> E1[Data Models Implementation]
+    D2 --> E2[FastAPI Endpoints]
+    
+    E1 --> F1[Service Layer Development]
+    E2 --> F1
+    
+    F1 --> G1[Unit Tests]
+    F1 --> G2[Integration Tests]
+    
+    G1 --> H[WebSocket Integration]
+    G2 --> H
+    
+    H --> I[Frontend Development]
+    
+    I --> J1[E2E Testing]
+    I --> J2[Performance Testing]
+    
+    J1 --> K[Documentation]
+    J2 --> K
+    
+    K --> L[Deployment Pipeline]
